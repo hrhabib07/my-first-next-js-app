@@ -8,15 +8,15 @@ const Counter = () => {
       <div className="text-2xl">
         <h1>Counter : {counterValue}</h1>
       </div>
-      <div>
+      <div className="flex gap-2">
         <button
-          className="p-2 border me-2"
+          className="btn btn-accent"
           onClick={() => setCounterValue(counterValue + 1)}
         >
           Increase
         </button>
         <button
-          className="p-2 border me-2"
+          className="btn btn-error"
           onClick={() => setCounterValue(counterValue - 1)}
         >
           Decrease
